@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Obter o valor na matrz onde 18 ou mais valores</p>
+    <p id="idade"></p><br>
+    <p>Ao clicar obter filtrar os valores acima do numero fornecido</p>
+    <p><input type="number" id="num"></p><br>
+    <button onclick="minhaFuncao()">TESTE</button>
+    <p id="val"></p>
+    <script>
+        const idade = [32, 33, 16, 40]
+        document.getElementById("idade").innerHTML = idade.filter(checar)
+        function checar(idade) {
+            return idade >= 18
+        }
+        console.log("<br>")
+        function check(idade) {
+            return idade > document.getElementById("num").value
+        }
+        function minhaFuncao() {
+            document.getElementById("val").innerHTML = idade.filter(check)
+        }
+    </script>
+</body>
+
+</html>
