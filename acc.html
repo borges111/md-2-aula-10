@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title><%= current_page.data.title || "API Documentation" %></title>
+
+  </head>
+
+  <body class="<%= page_classes %>" data-languages="<%= JSON.stringify(langs) %>">
+    <a href="#" id="nav-button">
+
+    </a>
+    
+    
+    <div class="tocify-wrapper">
+    
+        <div class="lang-selector">
+          
+            <a href="#" data-language-name="<%= langs[i] %>">
+          
+        </div>
+     
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+          <current_page.data.toc_footers.length; i++) { %>
+           
+         
+        </ul>
+      
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+       
+         
+       
+      </div>
+      <div class="dark-box">
+       
+          <div class="lang-selector">
+         
+              <a href="#" data-language-name="<%= langs[i] %>">
+          
+          </div>
+    
+        
+      </div>
+    </div>
+    <script type="text/javascript" src="https://api.handtalk.me/plugin/latest/handtalk.min.js"></script>
+    <script>
+    var ht = new HT({
+      token: "894ad581fb6306c7363cb9c32a5dd9dd",
+      videoEnabled: true,
+      exceptions: ['.tocify-wrapper']
+    });
+    
+    </script>
+  </body>
+</html>
